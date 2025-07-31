@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poemify – Mood Poetry Companion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background" id="background"></div>
+
+  <div class="container glass">
+    <h1>Poemify 📚</h1>
+    <p id="greeting">How are you feeling today?</p>
+
+    <div class="mood-buttons">
+      <button onclick="setMood('happy')">😊</button>
+      <button onclick="setMood('sad')">😢</button>
+      <button onclick="setMood('chill')">😌</button>
+      <button onclick="setMood('angry')">😡</button>
+      <button onclick="setMood('sleepy')">😴</button>
+    </div>
+
+    <div id="poem-box"></div>
+    <div id="affirmation-box"></div>
+   
+    <div class="history" id="history"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>       
